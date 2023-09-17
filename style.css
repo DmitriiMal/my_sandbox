@@ -1,0 +1,86 @@
+body {
+  background-color: #f4f4f4;
+}
+
+.flex-container {
+  display: flex;
+}
+
+.item {
+  background-color: #fff;
+  border-radius: 5px;
+  margin: 20px;
+  width: 100px;
+  height: 100px;
+  position: relative;
+  top: 0;
+  left: 0;
+  box-shadow: 0px 0px 10px 0px rgba(150, 150, 150, 0.3);
+  transition: all 0.1s ease-in-out;
+}
+
+.item:hover {
+  box-shadow: 0px 0px 10px 2px rgba(150, 150, 150, 0.5);
+  cursor: pointer;
+
+}
+
+#item-1 {
+  animation: ani 2s 0.5s infinite ease-in-out;
+}
+
+#item-2 {
+  animation: ani 2s 1s infinite ease-in-out;
+}
+
+#item-3 {
+  animation: ani 2s 1.5s infinite ease-in-out;
+}
+
+#item-4 {
+  animation: ani 2s 2s infinite ease-in-out;
+}
+
+#item-5 {
+  animation: drop 1s 2.5s 1 ease-in-out forwards;
+  top: -200px;
+}
+
+
+@keyframes ani {
+  50% {
+    top: 400px;
+    left: 0;
+    box-shadow: 0px 0px 10px 1px rgba(150, 150, 150, 0.3);
+
+  }
+}
+
+@keyframes drop {
+  to {
+    top: 400px;
+  }
+}
+
+/* Transform */
+
+#transform {
+  height: 100vh;
+}
+
+
+#item-6:hover {
+  transform: scale(1.02);
+}
+
+#item-7:hover {
+  transform: rotate(2deg);
+}
+
+#item-8:hover {
+  transform: skew(-2deg);
+}
+
+#item-9:hover {
+  transform: translateY(-2px);
+}
