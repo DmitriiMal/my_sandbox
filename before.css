@@ -104,3 +104,27 @@ header::before {
 .hero * {
   z-index: 1;
 }
+
+.grow {
+  transform: translateY(-1000px);
+  animation: drop-down 0.2s ease-in-out forwards 0.5s;
+}
+
+@keyframes drop-down {
+  to {
+    transform: translateY(0);
+
+  }
+}
+
+/* 
+.hero .content p {
+  transform: translateZ(2000px);
+  animation: drop-up 0.2s ease-in-out forwards 0.5s;
+}
+
+@keyframes drop-up {
+  to {
+    transform: translateZ(0);
+  }
+} */
