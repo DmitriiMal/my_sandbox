@@ -5,67 +5,67 @@
 
 
 
-// function product(name, price) {
-//   return `The product: ${name} costs € ${price}`;
-// }
-// console.log(product("Bread", 1.99));
+function product(name, price) {
+  return `The product: ${name} costs € ${price}`;
+}
+console.log(product("Bread", 1.99));
 
 
 
 ///
-// function getRasult(numberOne, numberTwo, NumberThree) {
-//   let sum = numberOne + numberTwo + NumberThree;
-//   let multiply = numberOne * numberTwo * NumberThree;
-//   let result = [sum, multiply];
-//   return result;
-// }
+function getRasult(numberOne, numberTwo, NumberThree) {
+  let sum = numberOne + numberTwo + NumberThree;
+  let multiply = numberOne * numberTwo * NumberThree;
+  let result = [sum, multiply];
+  return result;
+}
 
-// console.log(getRasult(2, 8, 4)[0]);
+console.log(getRasult(2, 8, 4)[0]);
 
 
 // =>
 
 ///
-// const multiply = (numb1, numb2) => {
-//   return numb1 * numb2;
-// }
+const multiply = (numb1, numb2) => {
+  return numb1 * numb2;
+}
 
-// console.log(multiply(2, 4));
-
-
-///
-// const sum = nmb => nmb + nmb;
-
-// console.log(sum(9));
-
+console.log(multiply(2, 4));
 
 
 ///
-// const cl = smt => console.log(smt);
+const sum = nmb => nmb + nmb;
 
-// cl('something');
-
-///
-
-
-// let randomNum = Math.floor(Math.random() * 110);
-
-// console.log(randomNum);
+console.log(sum(9));
 
 
 
 ///
+const cl = smt => console.log(smt);
 
-// let today = new Date();
-// console.log(today);
-// alert(today);
-
-// document.querySelector('h1').innerHTML = today;
+cl('something');
 
 ///
-// document.write("The result from multiplying 5 to 78 is " + (5 * 78));
 
-// document.write("<h1>This is a H1 title</h1> ");
+
+let randomNum = Math.floor(Math.random() * 110);
+
+console.log(randomNum);
+
+
+
+///
+
+let today = new Date();
+console.log(today);
+alert(today);
+
+document.querySelector('h1').innerHTML = today;
+
+///
+document.write("The result from multiplying 5 to 78 is " + (5 * 78));
+
+document.write("<h1>This is a H1 title</h1> ");
 
 
 
@@ -73,42 +73,42 @@
 
 // default parameter
 
-// function register(user = 'User') {
-//   return `${user} is registered`
-// }
+function register(user = 'User') {
+  return `${user} is registered`
+}
 
-// console.log(register());
+console.log(register());
 
 
 
 
 // Rest params
 
-// function sumOfNumbers(...numbers) {
+function sumOfNumbers(...numbers) {
 
-//   let total = 0;
-//   for (const num of numbers) {
-//     total += num;
-//   };
-//   return total;
-// }
+  let total = 0;
+  for (const num of numbers) {
+    total += num;
+  };
+  return total;
+}
 
-// console.log(sumOfNumbers(1, 2, 3, 4, 5));
+console.log(sumOfNumbers(1, 2, 3, 4, 5));
 
 
 // Object as a Function
 
-// const user1 = {
-//   name: "Dmitrii",
-//   id: 12349876,
-// }
+const user1 = {
+  name: "Dmitrii",
+  id: 12349876,
+}
 
-// function logIn(user) {
-//   messege = `${user.name} with id: ${user.id} has logged in`
-//   return messege;
-// }
+function logIn(user) {
+  messege = `${user.name} with id: ${user.id} has logged in`
+  return messege;
+}
 
-// console.log(logIn(user1));
+console.log(logIn(user1));
 
 
 
