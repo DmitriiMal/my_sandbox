@@ -1,0 +1,28 @@
+/* * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+} */
+
+img {
+  max-height: 50vh;
+  object-fit: cover;
+}
+
+#carouselExampleCaptions {
+  /* text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center; */
+}
+
+h5 {
+  position: relative;
+  top: -100PX;
+  color: beige;
+  font-size: 20vw;
+}
+
+/* #carouselExampleControls * {
+  z-index: 1;
+} */

@@ -38,14 +38,14 @@ body {
   background-color: var(--background-color);
   text-decoration: none;
   border-radius: var(--border-radius);
-  box-shadow: var(--shadow-sm);
+  /* box-shadow: var(--shadow-sm); */
   transition: box-shadow 0.4s ease-in-out;
 }
 
 .btn-1:hover {
   border: none;
-  border: var(--border);
   box-shadow: var(--shadow-sm-in);
+
 }
 
 .btn-2 {
