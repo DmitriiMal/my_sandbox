@@ -1,0 +1,10 @@
+
+#menu {
+  width: 300px;
+  background-color: gray;
+  height: 100%;
+}
+
+li a {
+  text-decoration: none;
+}
