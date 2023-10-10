@@ -132,7 +132,7 @@ const cartTotal = () => {
   for (const item of cart) {
     total += item.price * item.qtty;
   }
-  document.getElementById('price').innerHTML = currencyFormater.format(total);
+  document.getElementById('price').innerText = currencyFormater.format(total);
 };
 
 //increases item quantity
