@@ -10,7 +10,7 @@ console.log(weUseTheFallback);
 
 let variable: number = 22;
 console.log(variable);
-variable = `That shouldn't work`;
+// variable = `That shouldn't work`;
 console.log(variable);
 
 let singleLineStrings = 'hello ' + 'there ' + 'general ' + 'kenobi ';
@@ -51,16 +51,16 @@ myArray.forEach(function (value) {
   console.log(value);
 });
 
-function greeting(name?: string): string {
-  if (name) {
-    return 'General ' + name;
-  } else {
-    return 'Hello there';
-  }
-}
-var result = greeting('Kenobi');
-document.write(result);
-console.log(greeting());
+// function greeting(name?: string): string {
+//   if (name) {
+//     return 'General ' + name;
+//   } else {
+//     return 'Hello there';
+//   }
+// }
+// var result = greeting('Kenobi');
+// document.write(result);
+// console.log(greeting());
 
 var greeting: (name?: string) => string = function (name) {
   if (name) {
@@ -80,14 +80,14 @@ var greeting: (name?: string) => string = function (name) {
 // var myFunction = function() { // callback
 //   console.log("General Kenobi");
 // }
-function anotherFunction(ab: () => void) { // higher order function
-  console.log(Hello There);
+function anotherFunction(ab: () => void) {
+  // higher order function
+  // console.log(Hello There);
   ab();
 }
 // anotherFunction(myFunction); // prints 'General Kenobi' then prints 'Hello There'
-var color: string = 'blue'
+var color: string = 'blue';
 console.log(color);
-
 
 // let x:string=35;
 // console.log( "Value of x= " +x);

@@ -8,7 +8,7 @@ weUseTheFallback = 'We learn TypeScript'; // This will work as a fallback type
 console.log(weUseTheFallback);
 let variable = 22;
 console.log(variable);
-variable = `That shouldn't work`;
+// variable = `That shouldn't work`;
 console.log(variable);
 let singleLineStrings = 'hello ' + 'there ' + 'general ' + 'kenobi ';
 console.log(singleLineStrings);
@@ -41,17 +41,16 @@ for (let i = 0; i < 10; i++) {
 myArray.forEach(function (value) {
     console.log(value);
 });
-function greeting(name) {
-    if (name) {
-        return 'General ' + name;
-    }
-    else {
-        return 'Hello there';
-    }
-}
-var result = greeting('Kenobi');
-document.write(result);
-console.log(greeting());
+// function greeting(name?: string): string {
+//   if (name) {
+//     return 'General ' + name;
+//   } else {
+//     return 'Hello there';
+//   }
+// }
+// var result = greeting('Kenobi');
+// document.write(result);
+// console.log(greeting());
 var greeting = function (name) {
     if (name) {
         return 'General ' + name;
@@ -69,7 +68,8 @@ var greeting = function (name) {
 //   console.log("General Kenobi");
 // }
 function anotherFunction(ab) {
-    console.log(Hello, There);
+    // higher order function
+    // console.log(Hello There);
     ab();
 }
 // anotherFunction(myFunction); // prints 'General Kenobi' then prints 'Hello There'
