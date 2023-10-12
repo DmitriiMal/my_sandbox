@@ -59,5 +59,11 @@ class restaurantEmployee {
 }
 let cook = new restaurantEmployee('John', 'Doe', 2000);
 console.log(JSON.stringify(cook));
+// Object Destructuring
 const { fname: first, lname: last } = cook;
 console.log(last);
+// Array Destructuring
+const cookArr = ['John', 'Doe', 2000];
+console.log(cookArr);
+const [firstName, lastName, salaryCook] = cookArr;
+console.log(salaryCook);
