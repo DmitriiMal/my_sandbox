@@ -75,3 +75,6 @@ class restaurantEmployee {
 
 let cook = new restaurantEmployee('John', 'Doe', 2000);
 console.log(JSON.stringify(cook));
+
+const { fname: first, lname: last } = cook;
+console.log(last);
